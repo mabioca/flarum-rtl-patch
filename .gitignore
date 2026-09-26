@@ -2,4 +2,4 @@
 vendor
 git
 js/node_modules
-composer.lock
+composer.lockvendor/
