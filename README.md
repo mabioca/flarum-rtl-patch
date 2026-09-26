@@ -1,3 +1,5 @@
+[![Latest Release](https://img.shields.io/github/v/release/mabioca/flarum-rtl-patch)](https://github.com/mabioca/flarum-rtl-patch/releases)
+
 # Flarum RTL Patch for Flarum 2
 
 A compatibility patch for improving RTL (Right-to-Left) asset compilation in Flarum 2.
