@@ -29,6 +29,8 @@
 			"src/Overrides/Frontend/Compiler/LessCompiler.php"
 		]
 	},
+        "minimum-stability": "beta",
+        "prefer-stable": true,
 	"extra": {
 		"branch-alias": {
 			"dev-main": "1.x-dev"
