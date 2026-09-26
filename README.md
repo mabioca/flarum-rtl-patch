@@ -49,16 +49,27 @@ Tested with:
 
 ## Installation
 
-This patch is intended for developers and advanced Flarum administrators.
+This patch modifies the Flarum core asset compilation process.
+
+> ⚠️ This is not a Flarum extension. It is a compatibility patch for Flarum 2 RTL asset compilation.
+
+Before applying the patch, create a backup of your Flarum installation.
 
 Clone the repository:
 ```bash
 git clone https://github.com/mabioca/flarum-rtl-patch.git
 ```
 
-Copy the patched files into your Flarum installation.
+Replace the original Flarum compiler file:
+```text
+vendor/flarum/core/src/Frontend/Compiler/LessCompiler.php
+```
+with:
+```text
+src/Overrides/Frontend/Compiler/LessCompiler.php
+```
 
-After applying the patch:
+After applying the patch, rebuild the assets:
 ```bash
 php flarum assets:publish 
 php flarum cache:clear
